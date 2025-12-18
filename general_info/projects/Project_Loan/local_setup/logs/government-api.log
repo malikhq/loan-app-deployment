@@ -1,0 +1,44 @@
+2025/12/11 16:27:33 Successfully connected to database
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/customer             --> main.getCustomerHandler (3 handlers)
+[GIN-debug] POST   /api/customer             --> main.addCustomerHandler (3 handlers)
+[GIN-debug] GET    /api/customers            --> main.getAllCustomersHandler (3 handlers)
+[GIN-debug] DELETE /api/customer/:id         --> main.deleteCustomerHandler (3 handlers)
+[GIN-debug] GET    /health                   --> main.main.func1 (3 handlers)
+2025/12/11 16:27:33 Government Loan Bank API starting on port 8082
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8082
+[GIN] 2025/12/11 - 16:27:42 | 200 |   46.579209ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:42 | 200 |    2.858375ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:46 | 200 |    9.656125ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:48 | 200 |    3.865417ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:48 | 200 |     2.29575ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:48 | 200 |    1.264625ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:48 | 200 |    1.697333ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:48 | 200 |    1.972917ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:49 | 200 |    1.935958ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:49 | 200 |    3.091042ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:49 | 200 |    2.039084ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:49 | 200 |    3.748542ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:49 | 200 |      4.4675ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:50 | 200 |    1.266583ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:50 | 200 |    1.452291ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:50 | 200 |    2.516291ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:50 | 200 |    2.799458ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:51 | 200 |    2.089334ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:51 | 200 |     7.40375ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:27:51 | 200 |    2.091542ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:28:15 | 200 |    5.133083ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:28:16 | 200 |    2.220291ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:28:17 | 200 |    3.154917ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 16:28:17 | 200 |    3.643209ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 21:04:45 | 200 |   24.075709ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 21:04:45 | 200 |    1.782334ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 21:04:45 | 200 |        1.94ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"
+[GIN] 2025/12/11 - 21:04:46 | 200 |    1.841875ms |             ::1 | GET      "/api/customer?first_name=ade&last_name=ade"

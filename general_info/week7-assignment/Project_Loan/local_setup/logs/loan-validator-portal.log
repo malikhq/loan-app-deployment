@@ -1,0 +1,27 @@
+[90m2025-12-10T23:20:15+01:00[0m [32mINF[0m Initializing OpenTelemetry tracer [36mendpoint=[0mlocalhost:4317
+[90m2025-12-10T23:20:15+01:00[0m [32mINF[0m OpenTelemetry tracer initialized successfully
+[90m2025-12-10T23:20:15+01:00[0m [32mINF[0m Successfully connected to database [36mhost=[0mlocalhost [36mport=[0m5432
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.html
+
+[GIN-debug] GET    /                         --> main.main.func3 (6 handlers)
+[GIN-debug] POST   /auth/register            --> main.registerHandler (6 handlers)
+[GIN-debug] POST   /auth/login               --> main.loginHandler (6 handlers)
+[GIN-debug] GET    /auth/check-session       --> main.checkSessionHandler (6 handlers)
+[GIN-debug] GET    /api/validate-loan        --> main.validateLoanHandler (7 handlers)
+[90m2025-12-10T23:20:15+01:00[0m [32mINF[0m Server starting [36mport=[0m8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+2025/12/10 23:20:30 traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:4317: connect: connection refused"
+[GIN] 2025/12/10 - 23:20:31 | 200 |   10.664792ms |             ::1 | GET      "/"
+[GIN] 2025/12/10 - 23:20:36 | 200 |    1.072667ms |             ::1 | GET      "/auth/check-session"
+2025/12/10 23:20:45 traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:4317: connect: connection refused"
+2025/12/10 23:21:00 traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: read tcp [::1]:59822->[::1]:4317: read: connection reset by peer"

@@ -1,0 +1,17 @@
+2025/12/10 23:20:44 Successfully connected to database
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/customer             --> main.getCustomerHandler (3 handlers)
+[GIN-debug] POST   /api/customer             --> main.addCustomerHandler (3 handlers)
+[GIN-debug] GET    /api/customers            --> main.getAllCustomersHandler (3 handlers)
+[GIN-debug] DELETE /api/customer/:id         --> main.deleteCustomerHandler (3 handlers)
+[GIN-debug] GET    /health                   --> main.main.func1 (3 handlers)
+2025/12/10 23:20:44 Government Loan Bank API starting on port 8082
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8082
+[GIN-debug] [ERROR] listen tcp :8082: bind: address already in use

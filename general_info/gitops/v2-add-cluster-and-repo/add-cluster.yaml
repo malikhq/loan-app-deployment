@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: k8slab-second-cluster
+  namespace: argocd
+  labels:
+    argocd.argoproj.io/secret-type: cluster
+type: Opaque
+stringData:
+  name: k8slab-second-cluster
+  server: https://host.minikube.internal:63256
+  config: |
+    {
+      "tlsClientConfig": {
+        "insecure": true,
+        "certData": "LS0t ... SS0tCg==",
+        "keyData": "LS0tLSW ... tLS0tCg=="
+      }
+    }

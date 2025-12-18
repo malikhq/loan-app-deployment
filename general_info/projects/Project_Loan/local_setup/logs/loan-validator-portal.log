@@ -1,0 +1,110 @@
+[90m2025-12-11T16:27:38+01:00[0m [32mINF[0m Initializing OpenTelemetry tracer [36mendpoint=[0mlocalhost:4317
+[90m2025-12-11T16:27:38+01:00[0m [32mINF[0m OpenTelemetry tracer initialized successfully
+[90m2025-12-11T16:27:38+01:00[0m [32mINF[0m Successfully connected to database [36mhost=[0mlocalhost [36mport=[0m5432
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] Loaded HTML Templates (2): 
+	- 
+	- index.html
+
+[GIN-debug] GET    /                         --> main.main.func3 (6 handlers)
+[GIN-debug] POST   /auth/register            --> main.registerHandler (6 handlers)
+[GIN-debug] POST   /auth/login               --> main.loginHandler (6 handlers)
+[GIN-debug] GET    /auth/check-session       --> main.checkSessionHandler (6 handlers)
+[GIN-debug] GET    /api/validate-loan        --> main.validateLoanHandler (7 handlers)
+[90m2025-12-11T16:27:38+01:00[0m [32mINF[0m Server starting [36mport=[0m8080
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[90m2025-12-11T16:27:42+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mca8974d63ce08deb7a734fcba32ef584
+[90m2025-12-11T16:27:42+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mca8974d63ce08deb7a734fcba32ef584
+[GIN] 2025/12/11 - 16:27:42 | 200 |    55.94575ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:42+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mab0efe8c28ba6fe654bad2e791af2686
+[90m2025-12-11T16:27:42+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mab0efe8c28ba6fe654bad2e791af2686
+[GIN] 2025/12/11 - 16:27:42 | 200 |    5.121334ms |             ::1 | GET      "/api/validate-loan"
+[GIN] 2025/12/11 - 16:27:44 | 200 |    1.797792ms |             ::1 | GET      "/"
+[GIN] 2025/12/11 - 16:27:45 | 200 |     579.584µs |             ::1 | GET      "/auth/check-session"
+[90m2025-12-11T16:27:46+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m48d3dbf53fa0853969fc2c9a78a436c2
+[90m2025-12-11T16:27:46+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m48d3dbf53fa0853969fc2c9a78a436c2
+[GIN] 2025/12/11 - 16:27:46 | 200 |   11.603625ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m0fdf320d4891732f7fa76c7de910b927
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m0fdf320d4891732f7fa76c7de910b927
+[GIN] 2025/12/11 - 16:27:48 | 200 |    5.456666ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0ma9b0bd14d34b04b6784ac7c203522fb5
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0ma9b0bd14d34b04b6784ac7c203522fb5
+[GIN] 2025/12/11 - 16:27:48 | 200 |     3.18775ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m6694d48078afc5e7c0a402135c39a8d6
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m6694d48078afc5e7c0a402135c39a8d6
+[GIN] 2025/12/11 - 16:27:48 | 200 |    2.101083ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mfcd1be4001f9c32ea97436e99f008831
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mfcd1be4001f9c32ea97436e99f008831
+[GIN] 2025/12/11 - 16:27:48 | 200 |    2.597333ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mfedb86f22b50d565dbdbfd1affc49f2f
+[90m2025-12-11T16:27:48+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mfedb86f22b50d565dbdbfd1affc49f2f
+[GIN] 2025/12/11 - 16:27:48 | 200 |    2.831958ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m7b30f8c937a0bbc24002332200e6cbb5
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m7b30f8c937a0bbc24002332200e6cbb5
+[GIN] 2025/12/11 - 16:27:49 | 200 |    2.950583ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m991fc011943b3d7c83e569f48e09b6ec
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m991fc011943b3d7c83e569f48e09b6ec
+[GIN] 2025/12/11 - 16:27:49 | 200 |    4.456458ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0md95d511a51cc369e70edb2c1dc539e2f
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0md95d511a51cc369e70edb2c1dc539e2f
+[GIN] 2025/12/11 - 16:27:49 | 200 |    2.698375ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m232d1f5f0be06a35d2e6fb9641bfa3a3
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m232d1f5f0be06a35d2e6fb9641bfa3a3
+[GIN] 2025/12/11 - 16:27:49 | 200 |    4.963708ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m55845a70cc93bcd45ab4a09fd6b5b1f3
+[90m2025-12-11T16:27:49+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m55845a70cc93bcd45ab4a09fd6b5b1f3
+[GIN] 2025/12/11 - 16:27:49 | 200 |    5.658333ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m9b3563fcc221e6c8e6b16398830cf4fb
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m9b3563fcc221e6c8e6b16398830cf4fb
+[GIN] 2025/12/11 - 16:27:50 | 200 |    2.064625ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m772d199aaef12e975307128aa9f1b366
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m772d199aaef12e975307128aa9f1b366
+[GIN] 2025/12/11 - 16:27:50 | 200 |    2.617625ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mde4e2a6a70b5caec8b5dcaabdfb4bfa5
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mde4e2a6a70b5caec8b5dcaabdfb4bfa5
+[GIN] 2025/12/11 - 16:27:50 | 200 |    6.716708ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m2a6a442d75472be65fbd65ac5a21dd3e
+[90m2025-12-11T16:27:50+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m2a6a442d75472be65fbd65ac5a21dd3e
+[GIN] 2025/12/11 - 16:27:50 | 200 |    4.652375ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:51+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m6d8acaaa9108b34db1a4c4ccff06d7c6
+[90m2025-12-11T16:27:51+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m6d8acaaa9108b34db1a4c4ccff06d7c6
+[GIN] 2025/12/11 - 16:27:51 | 200 |    3.000334ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:51+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mdb23c402362e8ff039a595b22fa97418
+[90m2025-12-11T16:27:51+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mdb23c402362e8ff039a595b22fa97418
+[GIN] 2025/12/11 - 16:27:51 | 200 |    8.645458ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:27:51+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m6b034809ede3d8bf8e14f7df8032356e
+[90m2025-12-11T16:27:51+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m6b034809ede3d8bf8e14f7df8032356e
+[GIN] 2025/12/11 - 16:27:51 | 200 |       3.347ms |             ::1 | GET      "/api/validate-loan"
+2025/12/11 16:27:53 traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: read tcp [::1]:57347->[::1]:4317: read: connection reset by peer"
+2025/12/11 16:28:08 traces export: context deadline exceeded: rpc error: code = Unavailable desc = connection error: desc = "error reading server preface: read tcp [::1]:57351->[::1]:4317: read: connection reset by peer"
+[90m2025-12-11T16:28:15+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m1c51714c098307fe697d6062263def26
+[90m2025-12-11T16:28:15+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m1c51714c098307fe697d6062263def26
+[GIN] 2025/12/11 - 16:28:15 | 200 |    7.778791ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:28:16+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0me48fd961cde1eeb4f1bfe0af142cf1fe
+[90m2025-12-11T16:28:16+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0me48fd961cde1eeb4f1bfe0af142cf1fe
+[GIN] 2025/12/11 - 16:28:16 | 200 |    3.490417ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:28:17+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m2965f7df42d953962442b4acfef5c10c
+[90m2025-12-11T16:28:17+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m2965f7df42d953962442b4acfef5c10c
+[GIN] 2025/12/11 - 16:28:17 | 200 |    4.604958ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T16:28:17+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mcdc41325e872405ee79b7ae56e4487b0
+[90m2025-12-11T16:28:17+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mcdc41325e872405ee79b7ae56e4487b0
+[GIN] 2025/12/11 - 16:28:17 | 200 |    4.882167ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T21:04:45+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m602badd33f7a054936232bd32b7af01c
+[90m2025-12-11T21:04:45+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m602badd33f7a054936232bd32b7af01c
+[GIN] 2025/12/11 - 21:04:45 | 200 |    70.55175ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T21:04:45+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mb2bbead1ee26fd1b73c98b4e1055c708
+[90m2025-12-11T21:04:45+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mb2bbead1ee26fd1b73c98b4e1055c708
+[GIN] 2025/12/11 - 21:04:45 | 200 |      2.8955ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T21:04:45+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0mf5e6ec845b6600eafc63b93b41c099de
+[90m2025-12-11T21:04:45+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0mf5e6ec845b6600eafc63b93b41c099de
+[GIN] 2025/12/11 - 21:04:45 | 200 |      3.2115ms |             ::1 | GET      "/api/validate-loan"
+[90m2025-12-11T21:04:46+01:00[0m [32mINF[0m Loan validation request [36mfirst_name=[0made [36mlast_name=[0made [36mtrace_id=[0m6254c65d6cdfb4f8625a7ddd8a8afe87
+[90m2025-12-11T21:04:46+01:00[0m [32mINF[0m Loan validation successful [36mfirst_name=[0made [36mlast_name=[0made [36mloan_amount=[0m25000 [36mloan_status=[0mApproved [36mtrace_id=[0m6254c65d6cdfb4f8625a7ddd8a8afe87
+[GIN] 2025/12/11 - 21:04:46 | 200 |    3.079709ms |             ::1 | GET      "/api/validate-loan"
